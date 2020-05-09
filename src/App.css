@@ -55,3 +55,17 @@
     transform: rotate(360deg);
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .App-logo {
+    animation: none;
+  }
+
+  .Logo-orbit {
+    animation: none;
+  }
+
+  .Logo-electron {
+    display: none;
+  }
+}
