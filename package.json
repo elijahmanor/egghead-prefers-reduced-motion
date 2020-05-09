@@ -13,6 +13,9 @@
     "react-scripts": "3.0.1"
   },
   "devDependencies": {
+    "color": "^3.1.2",
+    "framer-motion": "^2.0.0-beta.66",
+    "lodash.random": "^3.2.0",
     "typescript": "3.8.3"
   },
   "scripts": {
