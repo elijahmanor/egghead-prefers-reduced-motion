@@ -20,23 +20,6 @@ const generateVotes = prevVotes => {
 
 function App() {
   const shouldReduceMotion = useReducedMotion();
-  // const [
-  //   shouldReduceMotion,
-  //   setShouldReduceMotion
-  // ] = React.useState(false);
-  // React.useEffect(() => {
-  //   const mediaQuery = window.matchMedia(
-  //     '(prefers-reduced-motion: reduce)'
-  //   );
-  //   const handleMedia = e =>
-  //     setShouldReduceMotion(e.matches);
-  //   mediaQuery.addEventListener('change', handleMedia);
-  //   return () =>
-  //     mediaQuery.removeEventListener(
-  //       'change',
-  //       handleMedia
-  //     );
-  // }, []);
   const [votes, setVotes] = React.useState(
     generateVotes([
       {
