@@ -9,6 +9,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
 }
 
 .Logo-center {
@@ -25,10 +26,6 @@
   fill: none;
   stroke-dasharray: 100px 50px;
   animation: orbit 500ms infinite linear;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
 }
 
 .Votes {
