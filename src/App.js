@@ -20,6 +20,14 @@ const generateVotes = prevVotes => {
 
 function App() {
   const shouldReduceMotion = useReducedMotion();
+
+  const logoRef = React.useRef();
+  React.useLayoutEffect(() => {
+    shouldReduceMotion
+      ? logoRef.current.pauseAnimations()
+      : logoRef.current.unpauseAnimations();
+  }, [shouldReduceMotion]);
+
   const [votes, setVotes] = React.useState(
     generateVotes([
       {
@@ -47,6 +55,7 @@ function App() {
     <div className="App">
       <ReactLogo
         src={logo}
+        ref={logoRef}
         className="App-logo"
         alt="logo"
       />
@@ -67,13 +76,13 @@ function App() {
                 )
               }}
             >
-              <motion.span
+              <motion.div
                 animate={
                   shouldReduceMotion ? undefined : true
                 }
               >
                 {vote.percentage}%
-              </motion.span>
+              </motion.div>
             </motion.li>
           ))}
         </motion.ul>

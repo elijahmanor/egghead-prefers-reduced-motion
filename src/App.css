@@ -54,15 +54,12 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .App-logo {
-    animation: none;
-  }
-
+  .App-logo,
   .Logo-orbit {
     animation: none;
   }
 
-  .Logo-electron {
+  /* .Logo-electron {
     display: none;
-  }
+  } */
 }
